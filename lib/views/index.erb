@@ -1,10 +1,58 @@
-<div>
-  <form action="/your-birthday">
+<head>
+  <style>
+    body {background-color: powderblue;}
+    .center {
+      margin: auto;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+      font-family: sans-serif;
+    }
+    input[type=text], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    input[type=date], select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    input[type=submit], select {
+      width: 100%;
+      padding: 8px 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+
+<div class="center">
+  <form action="/your_birthday">
     <label for="name">Enter your name:</label>
+    <br>
     <input type="text" name="name">
     <br>
+    <br>
     <label for="birthday">Enter your birthday:</label>
+    <br>
     <input type="date" name="birthday">
+    <br>
     <br>
     <input type="submit" value="Submit">
   </form>

@@ -1,1 +1,25 @@
-"hello world"
+<head>
+  <style>
+    body {background-color: powderblue;}
+    .center {
+      margin: auto;
+      text-align: center;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      /* bring your own prefixes */
+      transform: translate(-50%, -50%);
+    }
+    h1 {
+      font-family: sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <% if @birthday == 0 %>
+  <h1 class="center">Happy Birthday <%= @name %></h1>
+  <% else %>
+  <h1 class="center">Your birthday will be in <%= @birthday %> days, <%= @name %>!</h1>
+  <% end %>
+</body>
